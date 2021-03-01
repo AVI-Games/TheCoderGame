@@ -67,6 +67,7 @@ Include user stories, which are short descriptions of a feature, told from the p
 You may want to use the following template table.
 
 |Title|User story|Importance|Notes|
+|---|---|---|---|
 |Our Vision|As a company interested in inspiring people to join STEAM classes, we want the users' demographics to be recorded so that we can see who is interested in playing the game.|Needed to make better analysis.|---|
 |---|---|---|---|
 |---|---|---|---|
