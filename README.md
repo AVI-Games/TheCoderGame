@@ -29,6 +29,10 @@ Set the expectation for the product you’re building. So, start by defining the
 Describe the software being specified. Include benefits, objectives, and goals. This should relate to overall business goals, especially if teams outside of development will have access to the SRS
 
 ## Definitions and Acronyms
+- **STEAM:** Science, Technology, Engineering, Arts, and Mathematics.
+- **HTML:** Hyper Text Markup Language.
+- **CSS:** Cascading Style Sheets.
+- **JS:** JavaScript.
 Include any non-trivial definition or acronym used in the document.
 
 # Overall Description
@@ -56,8 +60,6 @@ This is where you detail the specific requirements for building your product.
 - The users' demographics must be recorded.
 - The game needs to show user advancement. 
 
-- 
-
 The functional requirements describe the services and functions of a system. Functional requirements must be precise and unambiguous.
 
 Include user stories, which are short descriptions of a feature, told from the perspective of one of your end user profiles. They are typically structured in the following fashion:
@@ -70,6 +72,11 @@ You may want to use the following template table.
 |---|---|---|---|
 |Our Vision|As a company interested in inspiring people to join STEAM classes, we want the users' demographics to be recorded so that we can see who is interested in playing the game.|Needed to make better analysis.|---|
 |---|---|---|---|
+|Our Mission|As a company interested in inspiring people to join STEAM classes, we want the website to be able to record certain indicators in a database, so that we can make a full analysis of the qualities of people interested. |By doing this, we are able to more easily interact with all kinds of people interested in STEAM classes.|---|
+|---|---|---|---|
+
+|---|---|---|---|
+
 |---|---|---|---|
 |_Short identifier_|_As a [type of user], I want [some goal] so that [some reason]_|_Must have_|_Write here any additional consideration_|
 
@@ -87,10 +94,12 @@ There are several types of interfaces you may have requirements for, including:
 - Communications
 
 ## Non-functional Requirements
+
 - We must use free assets or create our own.
 - The game must be accesible to even a 9 year old child.
 - The proyect will have a 10 week duration.
-- 
+- The game must keep private information hidden from the general public.
+- The personal information gathered must be used exclusively for the purpose of helping people join STEAM classes.
 
 Non-functional requirements are restrictions on the system or the development process. Non-functional requirements can be more critical than functional ones. If they are not met, the system is useless!
 
