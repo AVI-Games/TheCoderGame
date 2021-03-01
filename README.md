@@ -50,6 +50,14 @@ Finally, you should note if your project is dependent on any external factors. T
 This is where you detail the specific requirements for building your product.
 
 ## Functional Requirements
+- The website must allow the user to play a game.
+- The website must be able to record certain indicators in a database.
+- The game must measure playtime.
+- The users' demographics must be recorded.
+- The game needs to show user advancement. 
+
+- 
+
 The functional requirements describe the services and functions of a system. Functional requirements must be precise and unambiguous.
 
 Include user stories, which are short descriptions of a feature, told from the perspective of one of your end user profiles. They are typically structured in the following fashion:
@@ -59,10 +67,16 @@ Include user stories, which are short descriptions of a feature, told from the p
 You may want to use the following template table.
 
 |Title|User story|Importance|Notes|
+|Our Vision|As a company interested in inspiring people to join STEAM classes, we want the users' demographics to be recorded so that we can see who is interested in playing the game.|Needed to make better analysis.|---|
+|---|---|---|---|
 |---|---|---|---|
 |_Short identifier_|_As a [type of user], I want [some goal] so that [some reason]_|_Must have_|_Write here any additional consideration_|
 
 ## External Interface Requirements
+- The website must be programmed using HTML, CSS, and JS.
+- The data gathered must be saved in a MySQL database.
+- The game must be programmed in C#, or Unity.
+
 External interface requirements are types of functional requirements. They outline how your product will interface with other components or systems.
 
 There are several types of interfaces you may have requirements for, including:
@@ -72,6 +86,11 @@ There are several types of interfaces you may have requirements for, including:
 - Communications
 
 ## Non-functional Requirements
+- We must use free assets or create our own.
+- The game must be accesible to even a 9 year old child.
+- The proyect will have a 10 week duration.
+- 
+
 Non-functional requirements are restrictions on the system or the development process. Non-functional requirements can be more critical than functional ones. If they are not met, the system is useless!
 
 # Screens
