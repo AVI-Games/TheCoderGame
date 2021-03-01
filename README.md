@@ -1,6 +1,6 @@
 # TheCoderGame
 
-Start with a descriptive and succinct name for your project. Change the above with the name of your project
+A game about an aspiring developer who took up code when his/her mother passed away. Being in love with coding since a very young age, our protagonist is very talented on what he/she does, the premise is to solve logic gate puzzles in order to get to the protagonist's end goal, landing a job on a big technology company!
 
 # Table of content
 
