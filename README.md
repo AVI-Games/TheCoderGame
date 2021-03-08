@@ -100,6 +100,7 @@ There are several types of interfaces you may have requirements for, including:
 - The proyect will have a 10 week duration.
 - The game must keep private information hidden from the general public.
 - The personal information gathered must be used exclusively for the purpose of helping people join STEAM classes.
+- The number of users expected at the same time to play the game is around 200 on a regular day.
 
 Non-functional requirements are restrictions on the system or the development process. Non-functional requirements can be more critical than functional ones. If they are not met, the system is useless!
 
