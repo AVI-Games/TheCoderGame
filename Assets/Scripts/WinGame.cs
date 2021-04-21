@@ -21,7 +21,7 @@ public class WinGame : MonoBehaviour
             float minimum = gates.minimumGates;
 
             Debug.Log(Mathf.Ceil((minimum/3)*2));
-            if(gates.activeGates==(gates.minimumGates*1)){
+            if(gates.activeGates>=(gates.minimumGates*1)){
                 winScreen.SetActive(true);
             } else if (gates.activeGates>=(Mathf.Ceil((gates.minimumGates/3)*2))){
                 twoStar.SetActive(true);
