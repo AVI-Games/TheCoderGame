@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ToggleAND : MonoBehaviour
 {
+    public GameObject andStart, andEnd, andConnection;
     [SerializeField] private Sprite onSprite, offSprite;
     private SpriteRenderer spriteRenderer;
     [SerializeField] private Connection connection;
@@ -17,6 +18,9 @@ public class ToggleAND : MonoBehaviour
     {
         this.isTrue = false;
         this.spriteRenderer = GetComponent<SpriteRenderer>();
+        andStart.SetActive(false);
+        andEnd.SetActive(false);
+        andConnection.SetActive(false);
         // connection = GetComponent<Connection>();
     }
 
@@ -26,10 +30,16 @@ public class ToggleAND : MonoBehaviour
         if(leg1 && leg2){
             this.isTrue = true;
             connection.turnedOn = true;
+            andStart.SetActive(true);
+            andEnd.SetActive(true);
+            andConnection.SetActive(true);
             checkTrue();
         } else {
             this.isTrue = false;
             connection.turnedOn = false;
+            andStart.SetActive(false);
+            andEnd.SetActive(false);
+            andConnection.SetActive(false);
             checkFalse();
         }
         checkSprite();

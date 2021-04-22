@@ -363,7 +363,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7848195912212921854, guid: 9e99477163bdb7244a84844026847b9c,
+  m_Sprite: {fileID: -8814516353994481231, guid: 1f045f8c19931f440a3c59f2aca3a7d0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -387,14 +387,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb920ac281cc85443b6676b2180e365e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onSprite: {fileID: -4987757118433237020, guid: 9e99477163bdb7244a84844026847b9c,
+  orStart: {fileID: 280308932374446199}
+  orEnd: {fileID: 280308933675833891}
+  orConnection: {fileID: 280308931952643202}
+  onSprite: {fileID: 3326413429088467420, guid: 1f045f8c19931f440a3c59f2aca3a7d0,
     type: 3}
-  offSprite: {fileID: -7848195912212921854, guid: 9e99477163bdb7244a84844026847b9c,
+  offSprite: {fileID: 3326413429088467420, guid: 1f045f8c19931f440a3c59f2aca3a7d0,
     type: 3}
   connection: {fileID: 280308933675833889}
   isTrue: 0
+  functionCalled: 0
   leg1: 0
   leg2: 0
+  counter: {fileID: 0}
 --- !u!1 &280308933675833891
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,3 +509,4 @@ MonoBehaviour:
   and: {fileID: 0}
   or: {fileID: 0}
   bulb: {fileID: 0}
+  not: {fileID: 0}

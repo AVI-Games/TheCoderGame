@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ToggleOR : MonoBehaviour
 {
+    public GameObject orStart, orEnd, orConnection;
     [SerializeField] private Sprite onSprite, offSprite;
     private SpriteRenderer spriteRenderer;
     [SerializeField] private Connection connection;
@@ -16,6 +17,9 @@ public class ToggleOR : MonoBehaviour
     {
         this.isTrue = false;
         this.spriteRenderer = GetComponent<SpriteRenderer>();
+        orStart.SetActive(false);
+        orEnd.SetActive(false);
+        orConnection.SetActive(false);
         // connection = GetComponent<Connection>();
     }
 
@@ -26,10 +30,16 @@ public class ToggleOR : MonoBehaviour
             this.isTrue = true;
             connection.turnedOn = true;
             checkTrue();
+            orStart.SetActive(true);
+            orEnd.SetActive(true);
+            orConnection.SetActive(true);
         } else {
             this.isTrue = false;
             connection.turnedOn = false;
             checkFalse();
+            orStart.SetActive(false);
+            orEnd.SetActive(false);
+            orConnection.SetActive(false);
         }
         checkSprite();
     }
