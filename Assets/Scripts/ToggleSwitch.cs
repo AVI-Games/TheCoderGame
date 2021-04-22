@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ToggleSwitch : MonoBehaviour
 {
+    public GameObject switchStart, switchEnd, switchConnection;
     public Sprite offSprite;
     public Sprite onSprite;
     private bool isTurned;
@@ -15,6 +16,9 @@ public class ToggleSwitch : MonoBehaviour
     {
         isTurned = false;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        switchStart.SetActive(false);
+        switchEnd.SetActive(false);
+        switchConnection.SetActive(false);
         // connection = gameObject.GetComponent<Connection>();
     }
 
@@ -31,11 +35,17 @@ public class ToggleSwitch : MonoBehaviour
                 Debug.Log(isTurned);
                 connection.turnedOn = false;
                 spriteRenderer.sprite = offSprite;
+                switchStart.SetActive(false);
+                switchEnd.SetActive(false);
+                switchConnection.SetActive(false);
             } else {
                 isTurned = true;
                 Debug.Log(isTurned);
                 connection.turnedOn = true;
                 spriteRenderer.sprite = onSprite;
+                switchStart.SetActive(true);
+                switchEnd.SetActive(true);
+                switchConnection.SetActive(true);
             }
         }
     }

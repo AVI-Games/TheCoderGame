@@ -9,5 +9,7 @@ public class GoToScene : MonoBehaviour
     public void ClickAndGo(string scene)
     {
         SceneManager.LoadScene(scene);
+        PlayerPrefs.SetInt("timeInLevel", 0);
+        PlayerPrefs.SetInt("resetsInLevel", 0);
     }
 }

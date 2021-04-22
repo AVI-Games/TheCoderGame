@@ -19,5 +19,6 @@ public class TimeScript : MonoBehaviour
     {
         text.text = "Tiempo Transcurrido: " + (Mathf.Floor(Time.timeSinceLevelLoad)+beggining_time).ToString() + " segundos.";
         time = (int)Mathf.Floor(Time.timeSinceLevelLoad);
+        
     }
 }
