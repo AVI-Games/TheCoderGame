@@ -9,20 +9,15 @@ public class ResetLevel : MonoBehaviour
 
     public TimeScript timer;
     public CountGates gates;
-    public int resets;
+    public ResetTextScript resets;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        resets = PlayerPrefs.GetInt("resetsInLevel", 0);
-    }
 
-    public void ResetScene(string scene)
+    public void ResetScene()
     {
-        // Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
         PlayerPrefs.SetInt("timeInLevel", (timer.beggining_time+timer.time));
-        resets+=1;
-        PlayerPrefs.SetInt("resetsInLevel", resets);
+        resets.resets+=1;
+        PlayerPrefs.SetInt("resetsInLevel", resets.resets);
     }
 }

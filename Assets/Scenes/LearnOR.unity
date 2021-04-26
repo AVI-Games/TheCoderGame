@@ -423,6 +423,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: OR_Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 280308933512194364, guid: a42cbee41de19ef41b7db832a1f5ca75,
+        type: 3}
+      propertyPath: offSprite
+      value: 
+      objectReference: {fileID: -8814516353994481231, guid: 1f045f8c19931f440a3c59f2aca3a7d0,
+        type: 3}
     - target: {fileID: 280308933512194367, guid: a42cbee41de19ef41b7db832a1f5ca75,
         type: 3}
       propertyPath: m_RootOrder

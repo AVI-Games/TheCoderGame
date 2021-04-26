@@ -392,7 +392,7 @@ MonoBehaviour:
   orConnection: {fileID: 280308931952643202}
   onSprite: {fileID: 3326413429088467420, guid: 1f045f8c19931f440a3c59f2aca3a7d0,
     type: 3}
-  offSprite: {fileID: 3326413429088467420, guid: 1f045f8c19931f440a3c59f2aca3a7d0,
+  offSprite: {fileID: -8814516353994481231, guid: 1f045f8c19931f440a3c59f2aca3a7d0,
     type: 3}
   connection: {fileID: 280308933675833889}
   isTrue: 0
