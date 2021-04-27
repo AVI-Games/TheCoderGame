@@ -8,6 +8,7 @@ public class ConnectToDB : MonoBehaviour
     public TimeScript timer;
     public int timeInLevel, resetsInLevel, starsWon;
     public string apiURL = "http://localhost:5000/api/gameConnect";
+    public int level;
 
     public void Function(){
         timeInLevel = timer.time+timer.beggining_time;
@@ -18,6 +19,7 @@ public class ConnectToDB : MonoBehaviour
 
     IEnumerator uploadData()
     {
+
         Debug.Log("Time: " + timeInLevel);
         Debug.Log("Resets: " + resetsInLevel);
         Debug.Log("Stars: " + starsWon);
@@ -26,6 +28,7 @@ public class ConnectToDB : MonoBehaviour
 
         // We need to create the form first, by manually adding fields. These fields match the names of the columns in the database.
         // The values from the other scripts is checked here and added to the form.
+        form.AddField("levelNumber", level.ToString());
         form.AddField("timeInLevel", timeInLevel.ToString());
         form.AddField("resetsInLevel", resetsInLevel.ToString());
         form.AddField("starsWon", starsWon.ToString());

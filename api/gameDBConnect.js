@@ -54,6 +54,14 @@ app.post('/api/gameConnect', (request, response)=>{
     }
 });
 
+app.get('/api/select', (req, res) => {
+    let select = "SELECT * FROM game_data;";
+    let query = connection.query(select, function(error, results){
+        if(error) throw error;
+        res.json(results);
+    })
+});
+
 app.listen(port, ()=>
 {
     console.log(`App listening at http://localhost:${port}`);
