@@ -1,0 +1,15 @@
+.about {
+	padding: 10rem 0;
+	@include flexcolumn;
+
+	&__heading {
+		@include heading-size;
+	}
+
+	&__text {
+		@include text;
+		@include screen(phone) {
+			padding: 1rem 5rem;
+		}
+	}
+}

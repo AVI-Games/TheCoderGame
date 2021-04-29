@@ -1,0 +1,21 @@
+.button {
+	&:link,
+	&:visited {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 5rem;
+		color: $color-white;
+		background-color: $color-blue;
+		padding: 1rem 3rem;
+		@include noselect;
+		@include transition;
+	}
+
+	&:hover {
+		transform: translateY(-0.5rem);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}

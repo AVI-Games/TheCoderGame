@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<title>The Coder</title>
+		<script src="Build/UnityLoader.js"></script>
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="navigation">
+			<div class="navigation__logo">
+				<a href="#header" class="navigation__logo--link">The Coder</a>
+			</div>
+
+			<input
+				type="checkbox"
+				name="navigation-checkbox"
+				id="navigation__checkbox"
+				class="navigation__checkbox"
+			/>
+			<label for="navigation__checkbox" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
+			<div class="navigation__background">&nbsp;</div>
+
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a href="#about" class="navigation__link">Acerca de</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#team" class="navigation__link">Nuestro equipo</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="header" id="header">
+			<div
+				id="unityContainer"
+				style="width: 1280px; height: 720px; margin: auto"
+				class="hidden"
+			></div>
+			<a href="#" class="button" id="play-button">Jugar!</a>
+		</section>
+
+		<section class="about" id="about">
+			<h2 class="about__heading">Acerca de</h2>
+			<p class="about__text margin-bottom">
+				The Coder es un juego donde el jugador acompañará a una programadora
+				novata en su camino a la gloria (trabajar en una de las grandes
+				compañías) trabajando con expertos y expertas que le darán puzzles para
+				ayudarla a llegar a su meta y ser The Coder.
+			</p>
+			<h2 class="about__heading">Organización STEAM</h2>
+			<p class="about__text">
+				La organización STEAM es una organización que tiene como objetivo
+				impulsar niños y niñas de edad jóven que se interesen en clases STEAM,
+				las cuales son: Ciencia, Tecnología, Ingenieria, Artes y Matemáticas.
+			</p>
+			<p class="about__text">
+				Nuestro juego tiene el objetivo de interesar niños y niñas a estudiar en
+				el área de tecnología especialmente la sección computacional.
+			</p>
+		</section>
+
+		<section class="indicators">
+			<h2 class="indicators__heading">Indicadores</h2>
+			<div class="indicators__container">
+				<a href="#" class="button margin-bottom" id="indicator-button"
+					>Mostrar Indicadores</a
+				>
+				<table class="hidden">
+					<thead>
+						<tr class="indicators__row">
+							<th>Data</th>
+							<th>Level No.</th>
+							<th>Total Resets</th>
+							<th>Total Stars</th>
+							<th>Total Time</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="team" id="team">
+			<h2 class="team__heading">Nuestro equipo</h2>
+
+			<div class="team__box">
+				<div class="team__container">
+					<img src="/img/alfredo.png" alt="Alfredo picture" class="team__img" />
+					<h2 class="team__name">Alfredo Jeonghyun Park</h2>
+					<p class="team__description">Web Developer</p>
+				</div>
+
+				<div class="team__container">
+					<img src="/img/ignacio.png" alt="Ignacio picture" class="team__img" />
+					<h2 class="team__name">Ignacio Joaquín Moral</h2>
+					<p class="team__description">Database Master</p>
+				</div>
+
+				<div class="team__container">
+					<img src="/img/valter.png" alt="Valter picture" class="team__img" />
+					<h2 class="team__name">Valter Alejandro Kuhne Hernández</h2>
+					<p class="team__description">Game Designer</p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<h2 class="footer__logo">The Coder</h2>
+			<p class="footer__copyright">
+				Copyright &copy; 2021. All Rights Reserved.
+			</p>
+		</footer>
+	</body>
+</html>

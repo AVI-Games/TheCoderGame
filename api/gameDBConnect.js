@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const app = express();
-const port = 5000;
+const port = 5500;
 
 // We use cors to prevent security issues
 app.use(cors());
@@ -56,6 +56,8 @@ app.post('/api/gameConnect', (request, response)=>{
 
 app.get('/api/select', (req, res) => {
     let select = "SELECT * FROM game_data;";
+    let connection = connectToDB();
+
     let query = connection.query(select, function(error, results){
         if(error) throw error;
         res.json(results);

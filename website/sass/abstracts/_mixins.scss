@@ -1,0 +1,66 @@
+@mixin screen($brakepoint) {
+	//600px
+	@if $brakepoint == phone {
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+
+	// 900px
+	@if $brakepoint == tab-port {
+		@media (max-width: 56.25em) {
+			@content;
+		}
+	}
+
+	//1200px
+	@if $brakepoint == tab-land {
+		@media (max-width: 75em) {
+			@content;
+		}
+	}
+}
+
+@mixin flexhorizontal {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin transition {
+	transition: all 0.2s;
+}
+@mixin transitionslow {
+	transition: all 0.4s;
+}
+
+@mixin flexcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexcolumn {
+	@include flexcenter;
+	flex-direction: column;
+}
+
+@mixin section-padding {
+	padding: 10rem 0;
+}
+
+@mixin heading-size {
+	font-size: 5rem;
+}
+
+@mixin text {
+	font-size: 2.5rem;
+	padding: 1rem 15rem;
+}
+
+@mixin noselect {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}

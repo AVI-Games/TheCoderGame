@@ -1,0 +1,32 @@
+.team {
+	@include section-padding;
+	@include flexcolumn;
+	background-color: $color-blue;
+	color: $color-white;
+
+	&__img {
+		width: 20rem;
+	}
+
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		@include screen(tab-land) {
+			@include flexcolumn;
+		}
+	}
+
+	&__container {
+		text-align: center;
+		margin: 3rem 0;
+	}
+
+	&__name,
+	&__heading {
+		@include heading-size;
+	}
+
+	&__description {
+		@include text;
+	}
+}

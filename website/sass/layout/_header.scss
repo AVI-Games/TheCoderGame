@@ -1,0 +1,16 @@
+.header {
+	background: url("/img/header-img.jpeg") no-repeat top center;
+	background-size: cover;
+	height: 1000px;
+	width: 100%;
+	@include flexcenter;
+	flex-direction: column;
+
+	@include screen(tab-land) {
+		height: 800px;
+	}
+
+	@include screen(phone) {
+		height: 600px;
+	}
+}

@@ -1,0 +1,18 @@
+.indicators {
+	background-color: $color-black;
+	color: $color-white;
+	@include flexcolumn;
+	@include text;
+	@include section-padding;
+
+	&__heading {
+		@include heading-size;
+		margin-bottom: 1.5rem;
+	}
+
+	&__container {
+		width: 100%;
+		@include flexcolumn;
+		text-align: center;
+	}
+}
